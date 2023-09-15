@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 class Date {
 	int day;
 	int month;
@@ -10,18 +10,18 @@ public:
 	void Input();
 	void Print();
 
-	// Аксессоры
-	// Сеттеры
+	// РђРєСЃРµСЃСЃРѕСЂС‹
+	// РЎРµС‚С‚РµСЂС‹
 	void SetDay(int);
 	void SetMonth(int);
 	void SetYear(int);
 
-	// Геттеры
+	// Р“РµС‚С‚РµСЂС‹
 	int GetDay() const;
 	int GetMonth() const;
 	int GetYear() const;
 
-	// Операторы
+	// РћРїРµСЂР°С‚РѕСЂС‹
 	Date& operator++();
 	Date& operator--();
 

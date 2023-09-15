@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include "Date.h"
 
 using namespace std;
@@ -11,24 +11,24 @@ Date::Date(int d, int m, int y) {
 
 void Date::Input() {
 	do {
-		cout << "Введите число: ";
+		cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ";
 		cin >> day;
 		if (day <= 0 || day > 31)
-			cout << "Вы ввели неверное число!" << endl << endl;
+			cout << "Р’С‹ РІРІРµР»Рё РЅРµРІРµСЂРЅРѕРµ С‡РёСЃР»Рѕ!" << endl << endl;
 	} while (day <= 0 || day > 31);
 
 	do {
-		cout << "Введите месяц: ";
+		cout << "Р’РІРµРґРёС‚Рµ РјРµСЃСЏС†: ";
 		cin >> month;
 		if (month <= 0 || month > 12)
-			cout << "Вы ввели неверный месяц!" << endl << endl;
+			cout << "Р’С‹ РІРІРµР»Рё РЅРµРІРµСЂРЅС‹Р№ РјРµСЃСЏС†!" << endl << endl;
 	} while (month <= 0 || month > 12);
 
 	do {
-		cout << "Введите год: ";
+		cout << "Р’РІРµРґРёС‚Рµ РіРѕРґ: ";
 		cin >> year;
 		if (year <= 0 || year > 2050)
-			cout << "Вы ввели неверный год!" << year << endl;
+			cout << "Р’С‹ РІРІРµР»Рё РЅРµРІРµСЂРЅС‹Р№ РіРѕРґ!" << year << endl;
 	} while (year <= 0 || year > 2050);
 }
 void Date::Print() {
@@ -36,10 +36,10 @@ void Date::Print() {
 }
 
 
-// Сеттеры
+// РЎРµС‚С‚РµСЂС‹
 void Date::SetDay(int d) {
 	if (d <= 0 || d > 31) {
-		cout << "Вы ввели неверное число!" << endl << endl;
+		cout << "Р’С‹ РІРІРµР»Рё РЅРµРІРµСЂРЅРѕРµ С‡РёСЃР»Рѕ!" << endl << endl;
 		return;
 	}
 		
@@ -47,7 +47,7 @@ void Date::SetDay(int d) {
 }
 void Date::SetMonth(int m) {
 	if (m <= 0 || m > 31) {
-		cout << "Вы ввели неверный месяц!" << endl << endl;
+		cout << "Р’С‹ РІРІРµР»Рё РЅРµРІРµСЂРЅС‹Р№ РјРµСЃСЏС†!" << endl << endl;
 		return;
 	}
 
@@ -55,7 +55,7 @@ void Date::SetMonth(int m) {
 }
 void Date::SetYear(int y) {
 	if (y <= 0 || y > 31) {
-		cout << "Вы ввели неверный год!" << endl << endl;
+		cout << "Р’С‹ РІРІРµР»Рё РЅРµРІРµСЂРЅС‹Р№ РіРѕРґ!" << endl << endl;
 		return;
 	}
 
@@ -63,7 +63,7 @@ void Date::SetYear(int y) {
 }
 
 
-// Геттеры
+// Р“РµС‚С‚РµСЂС‹
 int Date::GetDay() const {
 	return day;
 }
